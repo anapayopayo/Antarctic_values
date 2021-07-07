@@ -1,0 +1,63 @@
+---
+title: "Climate relevant data exploration"
+author: "Ana Payo-Payo & Valeri Vasquez"
+date: "07/07/2021"
+output: html_document
+---
+  
+```{r setup, echo = FALSE,results='hide',include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Working group: <br />
+  Valery Vasquez (Berkeley Institute for Data Science)              
+  Ana Payo-Payo (University of Aberdeen) 
+
+# Background information                   
+  Time scale: 1959-2021
+  Spatial scale: Antarctica
+  
+```{r house keeping,echo = FALSE,results='hide',include=FALSE}
+#clear workspace
+rm(list=ls(all=TRUE))
+#load libraries
+library(ggplot2)
+library(dplyr)
+```
+```{r Sea Temperature,echo = FALSE,results='hide',include=FALSE}
+#load data
+#transform data to get annual means and CI when possible
+#save in an object ready to merge with all other data sets
+```
+```{r Sea Ice ,echo = FALSE,results='hide',include=FALSE}
+#load data
+#transform data to get annual means and CI when possible
+#save in an object ready to merge with all other data sets
+```
+```{r Sea Level Rise ,echo = FALSE,results='hide',include=FALSE}
+#load data
+#transform data to get annual means and CI when possible
+#save in an object ready to merge with all other data sets
+```
+```{r Acidification ,echo = FALSE,results='hide',include=FALSE}
+#load data
+#transform data to get annual means and CI when possible
+#save in an object ready to merge with all other data sets
+```
+```{r Biodiversity ,echo = FALSE,results='hide',include=FALSE}
+#load data
+#transform data to get annual means and CI when possible
+#save in an object ready to merge with all other data sets
+```
+```{r Create master data ,echo = FALSE,results='hide',include=FALSE}
+#aggregate all data sources in data
+#data<-
+```
+
+
+```{r Master figure ,echo = FALSE,results='hide',include=FALSE}
+data %>%
+  ggplot( aes(x=year, y=value, group=variable, color=variable)) +
+    geom_line()+
+     theme_tufte()
+```
+
